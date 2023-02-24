@@ -1,0 +1,7 @@
+{
+	"delay": 2500,
+	"exec": "npm run build && pm2 start ./dist/config/pm2.js",
+	"ignore": ["dist"],
+	"verbose": true,
+	"watch": ["src", "*.json"]
+}
