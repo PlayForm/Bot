@@ -5,5 +5,9 @@ export type Client = {
     token?: string;
     preflight?: () => Promise<void>;
 };
+export type Flight = {
+    routes: [];
+    preflight: () => Promise<void>;
+};
 declare const _default: Client[];
 export default _default;

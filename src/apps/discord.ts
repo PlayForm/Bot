@@ -15,3 +15,5 @@ for (const { token, options, events } of defaultsDiscord) {
 
 	client.login(token);
 }
+
+export default {}

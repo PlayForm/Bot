@@ -15,6 +15,11 @@ export type Client = {
 	preflight?: () => Promise<void>;
 };
 
+export type Flight = {
+	routes: [];
+	preflight: () => Promise<void>;
+};
+
 const clients: Client[] = [
 	{
 		token: "",
