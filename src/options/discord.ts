@@ -12,7 +12,7 @@ export type Client = {
 	events?: Map<string, (...args: string[]) => Promise<void>>;
 	options?: ClientOptions;
 	token?: string;
-	preflight?: () => Promise<void>;
+	preflight?: (...args: string[]) => Promise<void>;
 };
 
 export type Flight = {
@@ -41,7 +41,6 @@ const clients: Client[] = [
 		},
 		preflight: async (token: string) => {
 			const applicationId = env.DISCORD_APPLICATION_ID;
-			const testGuildId = env.DISCORD_TEST_GUILD_ID;
 
 			if (!env.DISCORD_PUBLIC_KEY) {
 				throw new Error(
@@ -49,7 +48,7 @@ const clients: Client[] = [
 				);
 			}
 
-			async function registerCommands(url) {
+			async function registerCommands(url: string) {
 				const response = await fetch(url, {
 					headers: {
 						"Content-Type": "application/json",
@@ -70,36 +69,6 @@ const clients: Client[] = [
 				return response;
 			}
 
-			/**
-			 * Register all commands with a specific guild/server. Useful during initial
-			 * development and testing.
-			 */
-			async function registerGuildCommands() {
-				if (!testGuildId) {
-					throw new Error(
-						"The DISCORD_TEST_GUILD_ID environment variable is required."
-					);
-				}
-
-				const url = `https://discord.com/api/v10/applications/${applicationId}/guilds/${testGuildId}/commands`;
-				const res = await registerCommands(url);
-				const json = await res.json();
-
-				json.forEach(async (cmd) => {
-					const response = await fetch(
-						`https://discord.com/api/v10/applications/${applicationId}/guilds/${testGuildId}/commands/${cmd.id}`
-					);
-
-					if (!response.ok) {
-						console.error(`Problem removing command ${cmd.id}`);
-					}
-				});
-			}
-
-			/**
-			 * Register all commands globally.  This can take o(minutes), so wait until
-			 * you're sure these are the commands you want.
-			 */
 			async function registerGlobalCommands() {
 				await registerCommands(
 					`https://discord.com/api/v10/applications/${applicationId}/commands`
