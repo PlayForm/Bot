@@ -3,7 +3,7 @@ export type Client = {
     events?: Map<string, (...args: string[]) => Promise<void>>;
     options?: ClientOptions;
     token?: string;
-    preflight?: () => Promise<void>;
+    preflight?: (...args: string[]) => Promise<void>;
 };
 export type Flight = {
     routes: [];

@@ -26,7 +26,7 @@ const clients: Client[] = [
 		events: new Map([
 			[
 				"message",
-				async (message: any) => {
+				async (message: string) => {
 					console.log(message);
 				},
 			],
