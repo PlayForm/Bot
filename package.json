@@ -35,7 +35,7 @@
 	"devDependencies": {
 		"@lightrix/config": "0.0.7",
 		"@lightrix/scripts": "0.1.4",
-		"nodemon": "2.0.21",
+		"nodemon": "2.0.22",
 		"pm2": "5.3.0"
 	}
 }
