@@ -3,7 +3,7 @@ import { ClientOptions, GatewayIntentBits } from "discord.js";
 import env from "../lib/env.js";
 
 const tokens =
-	// rome-ignore lint/nursery/noPrecisionLoss:
+
 	env.DISCORD_TOKENS.indexOf(",") !== -1
 		? env.DISCORD_TOKENS.split(",")
 		: [env.DISCORD_TOKENS];
