@@ -1,5 +1,4 @@
 import { ClientOptions, GatewayIntentBits } from "discord.js";
-
 import env from "../lib/env.js";
 
 const tokens =
