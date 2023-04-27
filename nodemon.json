@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/nodemon.json",
 	"delay": 2500,
 	"exec": "npm run build && pm2 start ./dist/config/pm2.js",
 	"ignore": ["dist"],
