@@ -4,11 +4,11 @@
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/NikolaRHristov/bot.git"
+		"url": "https://github.com/NicholasJoyChrist/bot.git"
 	},
-	"homepage": "https://github.com/NikolaRHristov/bot#readme",
+	"homepage": "https://github.com/NicholasJoyChrist/bot#readme",
 	"bugs": {
-		"url": "https://github.com/NikolaRHristov/bot/issues"
+		"url": "https://github.com/NicholasJoyChrist/bot/issues"
 	},
 	"license": "MIT",
 	"main": "./dist/index.js",
