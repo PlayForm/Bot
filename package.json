@@ -1,24 +1,6 @@
 {
-	"name": "@nikolarhristov/bot",
-	"version": "0.0.1",
-	"type": "module",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/NikolaRHristov/bot.git"
-	},
-	"homepage": "https://github.com/NikolaRHristov/bot#readme",
 	"bugs": {
 		"url": "https://github.com/NikolaRHristov/bot/issues"
-	},
-	"license": "MIT",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"scripts": {
-		"dev": "nodemon",
-		"prepublishOnly": "lightrix build 'src/**/*.ts'"
-	},
-	"peerDependencies": {
-		"discord-interactions": "3.4.0"
 	},
 	"dependencies": {
 		"discord.js": "14.11.0",
@@ -27,8 +9,25 @@
 	"devDependencies": {
 		"@lightrix/config": "0.0.11",
 		"@lightrix/scripts": "1.0.6",
-		"nodemon": "2.0.22",
+		"nodemon": "3.0.1",
 		"pm2": "5.3.0"
-	}
+	},
+	"homepage": "https://github.com/NikolaRHristov/bot#readme",
+	"license": "MIT",
+	"main": "./dist/index.js",
+	"name": "@nikolarhristov/bot",
+	"peerDependencies": {
+		"discord-interactions": "3.4.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NikolaRHristov/bot.git"
+	},
+	"scripts": {
+		"dev": "nodemon",
+		"prepublishOnly": "lightrix build 'src/**/*.ts'"
+	},
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"version": "0.0.1"
 }
-

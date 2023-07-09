@@ -41,9 +41,7 @@ const clients: Client[] = [
 			const applicationId = env.DISCORD_APPLICATION_ID;
 
 			if (!env.DISCORD_PUBLIC_KEY) {
-				throw new Error(
-					"The DISCORD_TOKEN environment variable is required."
-				);
+				throw new Error("The DISCORD_TOKEN environment variable is required.");
 			}
 
 			async function registerCommands(url: string) {
@@ -69,7 +67,7 @@ const clients: Client[] = [
 
 			async function registerGlobalCommands() {
 				await registerCommands(
-					`https://discord.com/api/v10/applications/${applicationId}/commands`
+					`https://discord.com/api/v10/applications/${applicationId}/commands`,
 				);
 			}
 
