@@ -8,9 +8,9 @@ for (const { token, options, events } of defaultsDiscord) {
 
 	const client = new Client(options);
 
-	for (const [name, event] of events ?? []) {
-		client.on(name, event);
-	}
+	// for (const [name, event] of events ?? []) {
+	// 	client.on(name, event);
+	// }
 
 	client.login(token);
 }
