@@ -1,1 +1,0 @@
-import{Client as r}from"discord.js";import s from"../options/discord.js";for(const{token:t,options:o,events:e}of s){if(!o)continue;const n=new r(o);for(const[f,i]of e??[])n.on(f,i);n.login(t)}var m={};export{m as default};
