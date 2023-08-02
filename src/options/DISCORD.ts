@@ -1,10 +1,10 @@
 import { ClientOptions, GatewayIntentBits } from "discord.js";
-import env from "../lib/env.js";
+import Environment from "../lib/Environment.js";
 
 const tokens =
-	env.DISCORD_TOKENS.indexOf(",") !== -1
-		? env.DISCORD_TOKENS.split(",")
-		: [env.DISCORD_TOKENS];
+	Environment.DISCORD_TOKENS.indexOf(",") !== -1
+		? Environment.DISCORD_TOKENS.split(",")
+		: [Environment.DISCORD_TOKENS];
 
 export type Client = {
 	events?: Map<string, (...args: string[]) => Promise<void>>;
@@ -38,9 +38,9 @@ const clients: Client[] = [
 			],
 		},
 		preflight: async (token: string) => {
-			const applicationId = env.DISCORD_APPLICATION_ID;
+			const applicationId = Environment.DISCORD_APPLICATION_ID;
 
-			if (!env.DISCORD_PUBLIC_KEY) {
+			if (!Environment.DISCORD_PUBLIC_KEY) {
 				throw new Error(
 					"The DISCORD_TOKEN environment variable is required."
 				);
