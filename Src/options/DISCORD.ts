@@ -1,5 +1,5 @@
 import { ClientOptions, GatewayIntentBits } from "discord.js";
-import Environment from "../lib/Environment.js";
+import Environment from "../Lib/Environment.js";
 
 const tokens =
 	Environment.DISCORD_TOKENS.indexOf(",") !== -1
