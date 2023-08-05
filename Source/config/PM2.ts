@@ -10,7 +10,7 @@ export default {
 	apps: [
 		{
 			name: "discord",
-			script: "./dist/apps/discord.js",
+			script: "./Target/apps/discord.js",
 			watch: true,
 			autorestart: true,
 			force: true,
