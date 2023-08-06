@@ -3,7 +3,7 @@
 	"delay": 2500,
 	"exec": "npm run prepublishOnly && pm2 start ./Target/config/pm2.js",
 	"ignore": [
-		"dist"
+		"Target"
 	],
 	"verbose": true,
 	"watch": [
