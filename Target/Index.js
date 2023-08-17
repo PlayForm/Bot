@@ -1,1 +1,1 @@
-import o from"./apps/discord.js";var d={discord:o};export{d as default};
+import{default as a}from"./Application/Discord.js";export{a as Discord};

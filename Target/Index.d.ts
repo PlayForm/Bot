@@ -1,4 +1,1 @@
-declare const _default: {
-    discord: {};
-};
-export default _default;
+export { default as Discord } from "./Application/Discord.js";
