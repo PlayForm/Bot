@@ -1,6 +1,7 @@
 {
 	"name": "@nikolarhristov/bot",
 	"version": "0.0.1",
+	"private": "false",
 	"homepage": "https://github.com/NikolaRHristov/bot#readme",
 	"bugs": {
 		"url": "https://github.com/NikolaRHristov/bot/issues"
@@ -10,6 +11,11 @@
 		"url": "git+https://github.com/NikolaRHristov/bot.git"
 	},
 	"license": "MIT",
+	"author": {
+		"name": "Nikola Hristov",
+		"email": "nikola@nikolahristov.tech",
+		"url": "https://nikolahristov.tech"
+	},
 	"type": "module",
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
@@ -29,5 +35,8 @@
 	},
 	"peerDependencies": {
 		"discord-interactions": "3.4.0"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
