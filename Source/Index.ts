@@ -1,5 +1,1 @@
-import discord from "./Application/discord.js";
-
-export default {
-	discord,
-};
+export { default as Discord } from "./Application/Discord.js";
