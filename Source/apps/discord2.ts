@@ -1,5 +1,5 @@
 import { Client } from "discord.js";
-import defaultsDiscord from "../Option/discord.js";
+import defaultsDiscord from "../Option/DISCORD.js";
 
 for (const { token, options, events } of defaultsDiscord) {
 	if (!options) {
