@@ -25,13 +25,13 @@
 	},
 	"dependencies": {
 		"axios": "1.4.0",
-		"discord.js": "14.12.1",
+		"discord.js": "14.13.0",
 		"dotenv": "16.3.1"
 	},
 	"devDependencies": {
 		"nodemon": "3.0.1",
 		"pm2": "5.3.0",
-		"typescript-esbuild": "0.1.13"
+		"typescript-esbuild": "0.1.14"
 	},
 	"peerDependencies": {
 		"discord-interactions": "3.4.0"
