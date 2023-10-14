@@ -1,4 +1,5 @@
-import { ClientOptions, GatewayIntentBits } from "discord.js";
+import { GatewayIntentBits } from "discord.js";
+
 import Environment from "../Library/Environment.js";
 
 const tokens =
@@ -89,3 +90,6 @@ export default clients.map((client, index) => {
 
 	return client;
 });
+
+
+import type { ClientOptions } from "discord.js";
