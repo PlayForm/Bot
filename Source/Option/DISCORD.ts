@@ -1,11 +1,13 @@
 import { GatewayIntentBits } from "discord.js";
 
-import Environment from "../Library/Environment.js";
+export const { DISCORD_APPLICATION_ID, DISCORD_PUBLIC_KEY, DISCORD_TOKENS } = (
+	await import("../Library/Environment.js")
+).default.parse(process.env);
 
-const tokens =
-	Environment.DISCORD_TOKENS.indexOf(",") !== -1
-		? Environment.DISCORD_TOKENS.split(",")
-		: [Environment.DISCORD_TOKENS];
+export const Tokens =
+	DISCORD_TOKENS.indexOf(",") !== -1
+		? DISCORD_TOKENS.split(",")
+		: [DISCORD_TOKENS];
 
 export type Client = {
 	events?: Map<string, (...args: string[]) => Promise<void>>;
@@ -19,7 +21,7 @@ export type Flight = {
 	preflight: () => Promise<void>;
 };
 
-const clients: Client[] = [
+export const Clients: Client[] = [
 	{
 		token: "",
 		events: new Map([
@@ -39,9 +41,9 @@ const clients: Client[] = [
 			],
 		},
 		preflight: async (token: string) => {
-			const applicationId = Environment.DISCORD_APPLICATION_ID;
+			const applicationId = DISCORD_APPLICATION_ID;
 
-			if (!Environment.DISCORD_PUBLIC_KEY) {
+			if (!DISCORD_PUBLIC_KEY) {
 				throw new Error(
 					"The DISCORD_TOKEN environment variable is required."
 				);
@@ -79,17 +81,16 @@ const clients: Client[] = [
 	},
 ];
 
-export default clients.map((client, index) => {
-	const token = tokens[index];
+export default Clients.map((Client, Index) => {
+	const Token = Tokens[Index];
 
-	if (token) {
-		client.token = token;
+	if (Token) {
+		Client.token = Token;
 	} else {
-		console.log(`No token for client: ${index}`);
+		console.log(`No token for client: ${Index}`);
 	}
 
-	return client;
+	return Client;
 });
-
 
 import type { ClientOptions } from "discord.js";
