@@ -45,7 +45,7 @@ export const Clients: Client[] = [
 
 			if (!DISCORD_PUBLIC_KEY) {
 				throw new Error(
-					"The DISCORD_TOKEN environment variable is required."
+					"The DISCORD_TOKEN environment variable is required.",
 				);
 			}
 
@@ -72,7 +72,7 @@ export const Clients: Client[] = [
 
 			async function registerGlobalCommands() {
 				await registerCommands(
-					`https://discord.com/api/v10/applications/${applicationId}/commands`
+					`https://discord.com/api/v10/applications/${applicationId}/commands`,
 				);
 			}
 
