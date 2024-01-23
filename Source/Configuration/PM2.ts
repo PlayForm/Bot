@@ -6,7 +6,7 @@ export type Ecosystem = {
 	apps: Apps;
 };
 
-export default ({
+export default {
 	apps: [
 		{
 			name: "discord",
@@ -16,4 +16,4 @@ export default ({
 			force: true,
 		},
 	],
-} satisfies Ecosystem);
+} satisfies Ecosystem;
