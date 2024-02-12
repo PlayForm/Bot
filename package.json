@@ -31,7 +31,7 @@
 	"devDependencies": {
 		"nodemon": "3.0.3",
 		"pm2": "5.3.1",
-		"typescript-esbuild": "0.3.8"
+		"typescript-esbuild": "0.3.9"
 	},
 	"peerDependencies": {
 		"discord-interactions": "3.4.0"
