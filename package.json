@@ -26,7 +26,11 @@
 	"dependencies": {
 		"axios": "1.6.7",
 		"discord.js": "14.14.1",
+<<<<<<< HEAD
 		"dotenv": "16.4.4"
+=======
+		"dotenv": "16.4.3"
+>>>>>>> d39873e99e20b8960e2ab87ff9252ea8b76b1c27
 	},
 	"devDependencies": {
 		"nodemon": "3.0.3",
