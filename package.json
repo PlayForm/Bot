@@ -2,19 +2,19 @@
 	"name": "@nikolarhristov/bot",
 	"version": "0.0.1",
 	"private": false,
-	"homepage": "HTTPS://GitHub.Com/Playform/Bot#readme",
+	"homepage": "https://github.com/Playform/Bot#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/Playform/Bot/issues"
+		"url": "https://github.com/Playform/Bot/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+HTTPS://GitHub.Com/Playform/Bot.git"
+		"url": "git+https://github.com/Playform/Bot.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Playform",
 		"email": "Hello@Playform.Cloud",
-		"url": "HTTPS://Playform.Cloud"
+		"url": "https://playform.cloud"
 	},
 	"type": "module",
 	"main": "./Target/Index.js",
