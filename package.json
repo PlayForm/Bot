@@ -13,7 +13,7 @@
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Playform",
-		"email": "Hello@Playform.Cloud",
+		"email": "hello@playform.cloud",
 		"url": "https://playform.cloud"
 	},
 	"type": "module",
@@ -32,8 +32,8 @@
 	"devDependencies": {
 		"nodemon": "3.1.0",
 		"pm2": "5.3.1",
-		"typescript-document": "0.0.6",
-		"typescript-esbuild": "0.4.8"
+		"typescript-document": "0.0.7",
+		"typescript-esbuild": "0.4.9"
 	},
 	"peerDependencies": {
 		"discord-interactions": "3.4.0"
