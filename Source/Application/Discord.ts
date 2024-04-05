@@ -1,4 +1,4 @@
-for (const { token, options, events } of (await import("../Option/DISCORD.js"))
+for (const { token, options, events } of (await import("@Option/Discord.js"))
 	.default) {
 	if (!options) {
 		continue;
