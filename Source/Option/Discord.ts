@@ -1,7 +1,7 @@
 import { GatewayIntentBits } from "discord.js";
 
 export const { DISCORD_APPLICATION_ID, DISCORD_PUBLIC_KEY, DISCORD_TOKENS } = (
-	await import("../Library/Environment.js")
+	await import("@Variable/Environment.js")
 ).default.parse(process.env);
 
 export const Tokens =
