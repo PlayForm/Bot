@@ -5,19 +5,19 @@
 	"keywords": [
 		"playform"
 	],
-	"homepage": "HTTPS://GitHub.Com/Playform/Bot#readme",
+	"homepage": "HTTPS://GitHub.Com/PlayForm/Bot#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/Playform/Bot/issues"
+		"url": "HTTPS://GitHub.Com/PlayForm/Bot/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+HTTPS://github.com/Playform/Bot.git"
+		"url": "git+HTTPS://github.com/PlayForm/Bot.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "⛲ Source ⁄ 🚪 Open —",
-		"email": "Source/Open@Playform.Cloud",
-		"url": "HTTPS://Playform.Cloud"
+		"email": "Source/Open@PlayForm.Cloud",
+		"url": "HTTPS://PlayForm.Cloud"
 	},
 	"type": "module",
 	"main": "./Target/Index.js",
