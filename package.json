@@ -1,7 +1,10 @@
 {
-	"name": "@nikolarhristov/bot",
+	"name": "@nikolahristovo1/bot",
 	"version": "0.0.1",
 	"private": false,
+	"keywords": [
+		"playform"
+	],
 	"homepage": "HTTPS://GitHub.Com/Playform/Bot#readme",
 	"bugs": {
 		"url": "HTTPS://GitHub.Com/Playform/Bot/issues"
@@ -12,7 +15,7 @@
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
-		"name": "Source/Open",
+		"name": "⛲ Source ⁄ 🚪 Open —",
 		"email": "Source/Open@Playform.Cloud",
 		"url": "HTTPS://Playform.Cloud"
 	},
