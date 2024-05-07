@@ -1,7 +1,8 @@
-export declare const object: <T extends import("zod").ZodRawShape>(shape: T, params?: import("zod").RawCreateParams) => import("zod").ZodObject<T, "strip", import("zod").ZodTypeAny, { [k_1 in keyof import("zod").objectUtil.addQuestionMarks<import("zod").baseObjectOutputType<T>, { [k in keyof import("zod").baseObjectOutputType<T>]: undefined extends import("zod").baseObjectOutputType<T>[k] ? never : k; }[keyof T]>]: import("zod").objectUtil.addQuestionMarks<import("zod").baseObjectOutputType<T>, { [k_2 in keyof import("zod").baseObjectOutputType<T>]: undefined extends import("zod").baseObjectOutputType<T>[k_2] ? never : k_2; }[keyof T]>[k_1]; }, { [k_2_1 in keyof import("zod").baseObjectInputType<T>]: import("zod").baseObjectInputType<T>[k_2_1]; }>, string: (params?: ({
+export declare const object: <T extends import("zod").ZodRawShape>(shape: T, params?: import("zod").RawCreateParams) => import("zod").ZodObject<T, "strip", import("zod").ZodTypeAny, { [k in keyof import("zod").objectUtil.addQuestionMarks<import("zod").baseObjectOutputType<T>, any>]: import("zod").objectUtil.addQuestionMarks<import("zod").baseObjectOutputType<T>, any>[k]; }, { [k_1 in keyof import("zod").baseObjectInputType<T>]: import("zod").baseObjectInputType<T>[k_1]; }>, string: (params?: ({
     errorMap?: import("zod").ZodErrorMap | undefined;
     invalid_type_error?: string | undefined;
     required_error?: string | undefined;
+    message?: string | undefined;
     description?: string | undefined;
 } & {
     coerce?: true | undefined;

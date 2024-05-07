@@ -1,1 +1,1 @@
-export { default as Discord } from "./Application/Discord.js";
+export { default as Discord } from "@Variable/Discord.js";
