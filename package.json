@@ -29,11 +29,11 @@
 	"dependencies": {
 		"axios": "1.7.2",
 		"discord-interactions": "4.0.0",
-		"discord.js": "14.16.0-dev.1721822668-fcd35ea2e",
+		"discord.js": "14.16.0-dev.1721866227-bf6761a44",
 		"dotenv": "16.4.5"
 	},
 	"devDependencies": {
-		"@playform/build": "0.1.1",
+		"@playform/build": "0.1.2",
 		"nodemon": "3.1.4",
 		"pm2": "5.4.2"
 	},
