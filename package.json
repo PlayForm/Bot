@@ -38,7 +38,7 @@
 		"pm2": "5.4.2"
 	},
 	"publishConfig": {
-		"provenance": true,
-		"access": "public"
+		"access": "public",
+		"provenance": true
 	}
 }
