@@ -27,7 +27,7 @@
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"dependencies": {
-		"axios": "1.7.4",
+		"axios": "1.7.5",
 		"discord-interactions": "4.0.0",
 		"discord.js": "15.0.0-dev.1690805171-488aa58b2.0",
 		"dotenv": "16.4.5"
