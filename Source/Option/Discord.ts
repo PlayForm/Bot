@@ -1,4 +1,4 @@
-import { GatewayIntentBits } from "discord.js";
+import { GatewayIntentBits, type ClientOptions } from "discord.js";
 
 export const { DISCORD_APPLICATION_ID, DISCORD_PUBLIC_KEY, DISCORD_TOKENS } = (
 	await import("@Variable/Environment.js")
@@ -92,5 +92,3 @@ export default Clients.map((Client, Index) => {
 
 	return Client;
 });
-
-import type { ClientOptions } from "discord.js";
