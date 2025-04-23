@@ -34,7 +34,7 @@
 	},
 	"devDependencies": {
 		"@playform/build": "0.2.3",
-		"nodemon": "3.1.9",
+		"nodemon": "3.1.10",
 		"pm2": "6.0.5"
 	},
 	"publishConfig": {
