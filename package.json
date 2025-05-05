@@ -29,7 +29,11 @@
 	"dependencies": {
 		"axios": "1.9.0",
 		"discord-interactions": "4.1.1",
+<<<<<<< HEAD
 		"discord.js": "14.19.3",
+=======
+		"discord.js": "14.19.2",
+>>>>>>> c02bfe0618bf6c7d186b475f4671425a4b52c70e
 		"dotenv": "16.5.0"
 	},
 	"devDependencies": {
