@@ -1,4 +1,4 @@
-export declare const object: <T extends import("zod").ZodRawShape>(shape: T, params?: import("zod").RawCreateParams) => import("zod").ZodObject<T, "strip", import("zod").ZodTypeAny, import("zod").objectOutputType<T, import("zod").ZodTypeAny, "strip">, import("zod").objectInputType<T, import("zod").ZodTypeAny, "strip">>, string: (params?: import("zod").RawCreateParams & {
+export declare const object: <Shape extends import("zod").ZodRawShape>(shape: Shape, params?: import("zod").RawCreateParams) => import("zod").ZodObject<Shape, "strip", import("zod").ZodTypeAny, import("zod").objectOutputType<Shape, import("zod").ZodTypeAny, "strip">, import("zod").objectInputType<Shape, import("zod").ZodTypeAny, "strip">>, string: (params?: import("zod").RawCreateParams & {
     coerce?: true;
 }) => import("zod").ZodString;
 declare const _default: import("zod").ZodObject<{
